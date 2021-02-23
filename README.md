@@ -1,17 +1,17 @@
 # Find-Best-Dice
-First Task: Compare Two Dices
+## First Task: Compare Two Dices
 
 Implement a function that takes two dices as input and computes two values: the first value is the number of times the first dice wins (out of all possible 36 choices), the second value is the number of times the second dice wins. We say that a dice wins if the number on it is greater than the number on the other dice.
 
 
-Second Task: Is there the Best Dice?
+## Second Task: Is there the Best Dice?
 
 Now, your goal is to check whether among the three given dices there is one that is better than the remaining two dices.
 
 Implement a function that takes a list of dices and checks whether there is dice (in this list) that is better than all other dices. We say that a dice is better than another one, if it wins more frequently (that is, out of all 36 possibilities, it wins in a cases, while the second one wins in b cases, and (a > b). If there is such a dice, return its (0-based) index. Otherwise, return -1.
 
 
-Third Task: Implement a Strategy
+## Third Task: Implement a Strategy
 
 You are now ready to play!
 
