@@ -9,6 +9,10 @@ def count_wins(dice1, dice2):                       # Create a function to find 
                 dice2_wins += 1
     return dice1_wins, dice2_wins                  # Return the value of wins for each dice.
 
+# Use the following to debug the fuction above.
+# Input: dice1 = [1, 2, 3, 4, 5, 6], dice2 = [1, 2, 3, 4, 5, 6]
+# Output: (15, 15)
+
 
 def find_the_best_dice(dices):                     # Create a function to find which dice wins the most.
     assert all(len(dice) == 6 for dice in dices)
@@ -42,6 +46,10 @@ def find_the_best_dice(dices):                     # Create a function to find w
             return -1                              # Returns -1 if there is no best dice
         else:
             return max_index                       # Return the dice which wins the most
+        
+# Use the following to debug the fuction above.
+# Input: [[1, 1, 6, 6, 8, 8], [2, 2, 4, 4, 9, 9], [3, 3, 5, 5, 7, 7]]
+# Output: -1
 
 
 def compute_strategy(dices):                       # Create a function that finds the best dice which is most likely to win against another dice.
@@ -63,3 +71,11 @@ def compute_strategy(dices):                       # Create a function that find
             strategy[x] = y
 
     return strategy                                # Return the best dice that the user can choose to win.
+
+# Use the following to debug the fuction above.
+# Input: [[4, 4, 4, 4, 0, 0], [7, 7, 3, 3, 3, 3], [6, 6, 2, 2, 2, 2], [5, 5, 5, 1, 1, 1]]
+# Output: {'choose_first': True, 'first_dice': 1}
+
+# Use the code below to input the values of the dices before running the code.
+# Dices = [[?, ?, ?, ?, ?, ?], [?, ?, ?, ?, ?, ?], ...]
+# print(compute_strategy(dices))
