@@ -1,4 +1,4 @@
-# Find-Best-Dice
+# Dice Game
 ## First Task: Compare Two Dices
 
 Implement a function that takes two dices as input and computes two values: the first value is the number of times the first dice wins (out of all possible 36 choices), the second value is the number of times the second dice wins. We say that a dice wins if the number on it is greater than the number on the other dice.
