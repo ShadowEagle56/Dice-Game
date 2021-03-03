@@ -13,5 +13,5 @@ Implement a function that takes a list of dices and checks whether there is dice
 ## Third Task: Implement a Strategy
 
 Implement a function that takes a list of dices and returns a strategy. The strategy is a dictionary:
-After analyzing the given list of dices and you decide to choose a dice first, set strategy["choose_first"] to True and set strategy["first_dice"] to be the index of the dice you would like to choose.
-If you would like to be the second one to choose a dice, set strategy["choose_first"] to False. Then specify for each dice that your opponent may take, the dice that you would take in return. For each i from 0 to len(dices)-1, set strategy[i] to an index j of the dice that you would take if the opponent takes the i-th dice first.
+After analyzing the given list of dices and you decide to be the one to start, set strategy["choose_first"] to True and set strategy["first_dice"] to be the index of the dice you would like to choose.
+If you would like to go second, set strategy["choose_first"] to False. Then specify for each dice that your opponent may take, the dice that you would take in return. For each i from 0 to len(dices)-1, set strategy[i] to an index j of the dice that you would take if the opponent takes the i-th dice first.
